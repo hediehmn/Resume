@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .rtl {
+      direction: rtl;
+    }
+  }
+
+  @font-face {
+    font-family: 'Vazirmatn';
+    src:url('../font/Vazirmatn-Medium.woff2')format('truetype');
+  }
+  @font-face {
+    font-family: 'ABSTER';
+    src:url('../font/ABSTER.otf')format('truetype');
+  }
+  @font-face {
+    font-family: 'DanaFaNum';
+    src:url('../font/DanaFaNum-Medium.woff')format('truetype');
+  }

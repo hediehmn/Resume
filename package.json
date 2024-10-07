@@ -1,0 +1,19 @@
+{
+  "name": "web2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/tailwind.css -o ./src/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "swiper": "^11.1.8"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "description": ""
+}

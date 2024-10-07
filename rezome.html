@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/main.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+  </head>
+  <body
+    class="rtl bg-[#000000] font-Vazirmatn cursor-default flex flex-col items-center"
+    style="
+      background-image: url(./media/—Pngtree—symmetrical\ lines\ and\ shapes\ forming_15602009.png);
+      background-position: center;
+      background-repeat: no-repeat;
+
+      background-size: cover;
+      background-attachment: fixed;
+      user-select: none;
+    "
+  >
+    <!--header-->
+    <!--hamburger-->
+
+    <div
+      class="md:hidden bg-[#3b3b3b] w-[100%] h-[50px] shadow-[0_1px_10px_black] flex justify-between items-center flex-row mb-4 px-6 sticky top-0 z-50"
+    >
+      <div class="text-[#f2f2f2] font-[600] text-[18px] flex items-center mt-[5px]">
+        <h3 class="font-ABSTER" style="letter-spacing: 3px">HM</h3>
+      </div>
+      <button
+        id="menu-button"
+        type="button"
+        class="focus:outline-none flex items-center"
+      >
+        <span class="fa-solid fa-bars text-white text-[22px] mt-[2px]"></span>
+      </button>
+    </div>
+    <!-- منو برای موبایل   -->
+    <div
+      id="mobile-menu"
+      class="hidden bg-[#3b3b3b] w-[330px] h-screen z-50 fixed top-[50px] left-0"
+    >
+      <div class="pt-12 flex flex-col justify-start items-center gap-8">
+        <a
+          class="text-[#c4c4c4] text-[14px] border-b-2 border-b-[#3b3b3b] hover:text-white hover:border-b-[#ffffff] hover:border-b-2 transition-all duration-300 ease-linear"
+          href="./index.html"
+          >خانه</a
+        >
+        <a class="text-[14px] text-white border-b-[#ffffff] border-b-2" href="#"
+          >رزومه</a
+        >
+        <a
+          class="text-[#c4c4c4] text-[14px] border-b-2 border-b-[#3b3b3b] hover:text-white hover:border-b-[#ffffff] hover:border-b-2 transition-all duration-300 ease-linear"
+          href="./khadamat.html"
+          >خدمات</a
+        >
+        <a
+          class="text-[#c4c4c4] text-[14px] border-b-2 border-b-[#3b3b3b] hover:text-white hover:border-b-[#ffffff] hover:border-b-2 transition-all duration-300 ease-linear"
+          href="./nemone.html"
+          >نمونه کارها</a
+        >
+        <a
+          class="text-[#c4c4c4] text-[14px] border-b-2 border-b-[#3b3b3b] hover:text-white hover:border-b-[#ffffff] hover:border-b-2 transition-all duration-300 ease-linear"
+          href="./blog.html"
+          >بلاگ</a
+        >
+        <a
+          class="text-[#c4c4c4] text-[14px] border-b-2 border-b-[#3b3b3b] hover:text-white hover:border-b-[#ffffff] hover:border-b-2 transition-all duration-300 ease-linear"
+          href="./call.html"
+          >تماس</a
+        >
+      </div>
+    </div>
+    <!--menu-->
+    <div
+      class="md:bg-[#3b3b3b] w-[100%] h-[60px] shadow-[0_1px_10px_black] md:flex justify-center md:mb-7 hidden sticky top-0 z-50"
+    >
+      <div
+        class="2xl:w-[1100px] lg:w-[980px] md:w-11/12 h-[60px] flex justify-between items-center"
+      >
+        <div class="p-[10px] text-[#f2f2f2] font-[600] text-[20px]">
+          <h3 class="font-ABSTER" style="letter-spacing: 3px">HM</h3>
+        </div>
+        <div class="flex gap-6">
+          <a
+            href="./index.html"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] text-[#a0a0a0] font-[400] border-b-[#3b3b3b] border-b-2 transition-all duration-300 ease-linear hover:border-b-2 hover:border-b-[#ffffff] hover:text-[#ffffff]"
+            >خانه</a
+          >
+          <a
+            href="#"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] font-[400] border-b-2 border-b-[#ffffff] text-[#ffffff]"
+            >رزومه</a
+          >
+          <a
+            href="./khadamat.html"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] text-[#a0a0a0] font-[400] border-b-[#3b3b3b] border-b-2 transition-all duration-300 ease-linear hover:border-b-2 hover:border-b-[#ffffff] hover:text-[#ffffff]"
+            >خدمات</a
+          >
+          <a
+            href="./nemone.html"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] text-[#a0a0a0] font-[400] border-b-[#3b3b3b] border-b-2 transition-all duration-300 ease-linear hover:border-b-2 hover:border-b-[#ffffff] hover:text-[#ffffff]"
+            >نمونه کارها</a
+          >
+          <a
+            href="./blog.html"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] text-[#a0a0a0] font-[400] border-b-[#3b3b3b] border-b-2 transition-all duration-300 ease-linear hover:border-b-2 hover:border-b-[#ffffff] hover:text-[#ffffff]"
+            >بلاگ</a
+          >
+          <a
+            href="./call.html"
+            class="text-[16px] h-[40px] p-[10px_5px_5px] ml-[10px] text-[#a0a0a0] font-[400] border-b-[#3b3b3b] border-b-2 transition-all duration-300 ease-linear hover:border-b-2 hover:border-b-[#ffffff] hover:text-[#ffffff]"
+            >تماس</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--box-->
+    <div
+      class="2xl:w-[1100] lg:w-[980px] md:w-11/12 w-[95%] rounded-[12px] flex flex-col mb-[60px]"
+    >
+      <!--قسمت بالا باکس-->
+      <div
+        class="w-[100%] md:h-[120px] h-[80px] bg-[#323232e9]/80 rounded-[12px_12px_0_0] flex justify-center items-center relative"
+      >
+        <h2 class="md:text-[36px] text-[30px] font-[600] text-white">رزومه</h2>
+      </div>
+      <!--قسمت پایین-->
+      <div
+        class="bg-[#d5d5d5]/80 rounded-[0_0_12px_12px] lg:p-[40px] md:p-[35px_30px] flex flex-col justify-between p-[30px] gap-7"
+      >
+        <!--پایین2-->
+        <div
+          class="md:flex md:flex-row justify-between lg:gap-[40px] md:gap-[30px] gap-[20px] flex flex-col"
+        >
+          <!--راست-->
+          <div
+            class="md:w-[50%] w-[100%] flex flex-col lg:gap-[20px] gap-[15px]"
+          >
+            <p class="lg:text-[24px] text-[22px] font-[500]">
+              سوابق <span class="text-[#1963b8]">تحصیلی</span>
+            </p>
+            <div class="border-r-2 border-[#989898] flex flex-col p-[20px_0_0]">
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">دوره کامپیوتر</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >1393</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]"
+                    >دانشگاه تهران غرب</span
+                  >
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">دوره شبکه</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >1394</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]"
+                    >دانشگاه هاروارد</span
+                  >
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">دوره گرافیک</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >1395</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]">دانشگاه MIT</span>
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--اتمام راست-->
+          <!--چپ-->
+          <div
+            class="md:w-[50%] w-[100%] flex flex-col lg:gap-[20px] gap-[15px]"
+          >
+            <p class="lg:text-[24px] text-[22px] font-[500]">
+              سوابق <span class="text-[#1963b8]">شغلی</span>
+            </p>
+            <div class="border-r-2 border-[#989898] flex flex-col p-[20px_0_0]">
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">طراح رابط کاربردی</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >آبان 96 تا اکنون</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]">شرکت گوگل</span>
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">طراح وب</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >مهر 94 تا اردیبهشت 95</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]">شرکت اپل</span>
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+              <div
+                class="m-[0_20px_20px_0] border-r-2 border-[#1963b8] rounded-[2px] shadow-[0_0_5px_gray] p-[15px_20px] flex flex-col gap-2 relative bg-[#d5d5d5]/30 hover:shadow-[0_0_10px_gray]"
+              >
+                <div
+                  class="absolute top-7 -right-5 w-[20px] h-[2px] bg-[#1963b8]"
+                ></div>
+                <div
+                  class="absolute top-6 -right-7 w-[12px] h-[12px] bg-[#AFAFAF] rounded-[50%] border-2 border-[#1963b8]"
+                ></div>
+                <h4 class="text-[18px] font-[500]">طراح گرافیک</h4>
+                <div
+                  class="flex items-center justify-start gap-[7px] text-[12px]"
+                >
+                  <span class="font-DanaFaNum text-[#1963b8] text-[12px]"
+                    >فروردین 92 تا تیر 93</span
+                  >
+                  <span class="text-[#888888]">|</span>
+                  <span class="text-[#6e6e6e] text-[12px]"
+                    >شرکت مایکروسافت</span
+                  >
+                </div>
+                <p class="text-[15px] text-[#545454]">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--اتمام چپ-->
+        </div>
+        <!--2اتمام پایین-->
+        <!--مهارت-->
+        <div
+          class="md:flex md:flex-row justify-between lg:gap-[40px] md:gap-[30px] gap-[20px] flex flex-col"
+        >
+          <!--راست-->
+          <div
+            class="md:w-[50%] w-[100%] flex flex-col lg:gap-[20px] gap-[15px]"
+          >
+            <p class="lg:text-[24px] text-[22px] font-[500]">
+              مهارت های <span class="text-[#1963b8]">طراحی</span>
+            </p>
+            <div class="flex flex-col gap-[6px]">
+              <p class="text-[#515151] text-[13px]">طراحی وب</p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div
+                  class="w-[90%] h-[7px] bg-[#1963b8] rounded-[0_4px_4px_0]"
+                ></div>
+              </div>
+              <p class="text-[#515151] text-[13px]">فتوشاپ</p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div
+                  class="w-[80%] h-[7px] bg-[#1963b8] rounded-[0_4px_4px_0]"
+                ></div>
+              </div>
+              <p class="text-[#515151] text-[13px]">طراحی چاپ</p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div
+                  class="w-[85%] h-[7px] bg-[#1963b8] rounded-[0_4px_4px_0]"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!--اتمام راست-->
+          <!--چپ-->
+          <div
+            class="md:w-[50%] w-[100%] flex flex-col lg:gap-[20px] gap-[15px]"
+          >
+            <p class="lg:text-[24px] text-[22px] font-[500]">
+              مهارت های <span class="text-[#1963b8]">کدنویسی</span>
+            </p>
+            <div class="flex flex-col gap-[6px]">
+              <p class="text-[#515151] text-[13px] font-DanaFaNum">html5</p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div class="w-[100%] h-[7px] bg-[#1963b8] rounded-[4px]"></div>
+              </div>
+              <p class="text-[#515151] text-[13px] font-DanaFaNum">
+                CSS3/LESS/SASS
+              </p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div
+                  class="w-[95%] h-[7px] bg-[#1963b8] rounded-[0_4px_4px_0]"
+                ></div>
+              </div>
+              <p class="text-[#515151] text-[13px] font-DanaFaNum">jQuery</p>
+              <div
+                class="w-[100%] h-[7px] bg-[#a1a1a1] rounded-[4px] mb-[15px]"
+              >
+                <div
+                  class="w-[75%] h-[7px] bg-[#1963b8] rounded-[0_4px_4px_0]"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!--اتمام چپ-->
+        </div>
+        <!--اتمام مهارت-->
+        <!--رزومه-->
+        <div class="flex justify-center">
+          <button
+            class="border-2 border-[#9c9c9c] text-[#363636] p-[6px_18px] flex items-center rounded-[4px] mb-3 bg-[#bdbdbd] shadow-[2px_2px_10px_gray] text-[16px] font-[100] hover:shadow-[6px_6px_10px_gray] hover:bg-[#e1e1e1] transition-all duration-200 ease-linear"
+          >
+            دریافت رزومه
+          </button>
+        </div>
+      </div>
+      <!--اتمام پایین-->
+    </div>
+    <!--end box-->
+
+    <script>
+      document.getElementById("menu-button").onclick = function () {
+        var menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>
